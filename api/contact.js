@@ -17,7 +17,6 @@ export default async function handler(req, res) {
     const response = await axios.get(url, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
       },
     });
 
